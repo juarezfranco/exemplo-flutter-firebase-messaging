@@ -12,7 +12,7 @@ void main() async {
 
   final firebaseMessaging = await FirebaseMessaging.instance;
 
-  // firebaseMessaging.getToken(); // prints nas callbacks não funcionam sem antes chamar getToken: https://stackoverflow.com/a/68619500
+  firebaseMessaging.getToken(); // prints nas callbacks não funcionam sem antes chamar getToken: https://stackoverflow.com/a/68619500
 
   firebaseMessaging.setForegroundNotificationPresentationOptions(
     alert: true, // Required to display a heads up notification
